@@ -11,7 +11,7 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     var awesomeB = AwesomeB();
 
-    var buildValueB = BuildValueB((builder) => builder.b = 'dsfsdf');
+    var buildValueB = BuiltValueB((builder) => builder.b = 'dsfsdf');
     var serialize = bSerializers.serialize(buildValueB);
     print('$serialize');
 

@@ -4,8 +4,5 @@ import 'build_value_b.dart';
 
 part 'serializers.g.dart';
 
-@SerializersFor([
-  BuildValueB
-])
-
+@SerializersFor([BuiltValueB])
 final Serializers bSerializers = _$bSerializers;

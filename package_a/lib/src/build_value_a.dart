@@ -3,12 +3,13 @@ import 'package:built_value/serializer.dart';
 
 part 'build_value_a.g.dart';
 
-abstract class BuildValueA implements Built<BuildValueA, BuildValueABuilder> {
-  BuildValueA._();
+abstract class BuiltValueA implements Built<BuiltValueA, BuiltValueABuilder> {
+  BuiltValueA._();
 
-  factory BuildValueA([Function(BuildValueABuilder b)? updates]) = _$BuildValueA;
+  factory BuiltValueA([Function(BuiltValueABuilder b)? updates]) =
+      _$BuildValueA;
 
-  static Serializer<BuildValueA> get serializer => _$buildValueASerializer;
+  static Serializer<BuiltValueA> get serializer => _$buildValueASerializer;
 
   String get b;
 }

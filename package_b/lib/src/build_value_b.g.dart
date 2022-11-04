@@ -6,16 +6,16 @@ part of 'build_value_b.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<BuildValueB> _$buildValueBSerializer = new _$BuildValueBSerializer();
+Serializer<BuiltValueB> _$buildValueBSerializer = new _$BuildValueBSerializer();
 
-class _$BuildValueBSerializer implements StructuredSerializer<BuildValueB> {
+class _$BuildValueBSerializer implements StructuredSerializer<BuiltValueB> {
   @override
-  final Iterable<Type> types = const [BuildValueB, _$BuildValueB];
+  final Iterable<Type> types = const [BuiltValueB, _$BuildValueB];
   @override
   final String wireName = 'BuildValueB';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, BuildValueB object,
+  Iterable<Object?> serialize(Serializers serializers, BuiltValueB object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'b',
@@ -26,9 +26,9 @@ class _$BuildValueBSerializer implements StructuredSerializer<BuildValueB> {
   }
 
   @override
-  BuildValueB deserialize(Serializers serializers, Iterable<Object?> serialized,
+  BuiltValueB deserialize(Serializers serializers, Iterable<Object?> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new BuildValueBBuilder();
+    final result = new BuiltValueBBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -47,28 +47,28 @@ class _$BuildValueBSerializer implements StructuredSerializer<BuildValueB> {
   }
 }
 
-class _$BuildValueB extends BuildValueB {
+class _$BuildValueB extends BuiltValueB {
   @override
   final String b;
 
-  factory _$BuildValueB([void Function(BuildValueBBuilder)? updates]) =>
-      (new BuildValueBBuilder()..update(updates))._build();
+  factory _$BuildValueB([void Function(BuiltValueBBuilder)? updates]) =>
+      (new BuiltValueBBuilder()..update(updates))._build();
 
   _$BuildValueB._({required this.b}) : super._() {
     BuiltValueNullFieldError.checkNotNull(b, r'BuildValueB', 'b');
   }
 
   @override
-  BuildValueB rebuild(void Function(BuildValueBBuilder) updates) =>
+  BuiltValueB rebuild(void Function(BuiltValueBBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  BuildValueBBuilder toBuilder() => new BuildValueBBuilder()..replace(this);
+  BuiltValueBBuilder toBuilder() => new BuiltValueBBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is BuildValueB && b == other.b;
+    return other is BuiltValueB && b == other.b;
   }
 
   @override
@@ -83,16 +83,16 @@ class _$BuildValueB extends BuildValueB {
   }
 }
 
-class BuildValueBBuilder implements Builder<BuildValueB, BuildValueBBuilder> {
+class BuiltValueBBuilder implements Builder<BuiltValueB, BuiltValueBBuilder> {
   _$BuildValueB? _$v;
 
   String? _b;
   String? get b => _$this._b;
   set b(String? b) => _$this._b = b;
 
-  BuildValueBBuilder();
+  BuiltValueBBuilder();
 
-  BuildValueBBuilder get _$this {
+  BuiltValueBBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
       _b = $v.b;
@@ -102,18 +102,18 @@ class BuildValueBBuilder implements Builder<BuildValueB, BuildValueBBuilder> {
   }
 
   @override
-  void replace(BuildValueB other) {
+  void replace(BuiltValueB other) {
     ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$BuildValueB;
   }
 
   @override
-  void update(void Function(BuildValueBBuilder)? updates) {
+  void update(void Function(BuiltValueBBuilder)? updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  BuildValueB build() => _build();
+  BuiltValueB build() => _build();
 
   _$BuildValueB _build() {
     final _$result = _$v ??
